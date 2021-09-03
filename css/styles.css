@@ -1,0 +1,108 @@
+body {
+    font-family: 'Inter', sans-serif;
+    color: white;
+    background-color: hsl(233, 47%, 7%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.textBig {
+    margin-top: 0;
+}
+
+.paragraph {
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-bottom: 50px;
+    font-size: 14px;
+    line-height: 1.5em;
+}
+.container {
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    height: 400px;
+    width: 80vw;
+    max-width: 1000px;
+    
+}
+
+.highlight {
+    color: hsl(277, 64%, 61%);
+}
+
+.numbers {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    margin: 0 0 0px;
+}
+
+.textContainer {
+    padding: 50px 100px 50px 50px;
+    width: 50%;
+    -webkit-box-sizing: border-box;
+}
+
+.image {
+    width: 50%;
+    height: 100%;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    background-image: linear-gradient(hsl(277, 64%, 61%, .8), hsl(277, 64%, 61%, .8)), url(../images/image-header-desktop.jpg);
+    background-size: cover;
+    
+    
+}
+
+.containerItem {
+    margin-top: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.type {
+    color: hsla(0, 0%, 100%, 0.6);
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+
+.attribution {
+    display: none;
+}
+
+@media screen and (max-width: 1000px) {
+    .container {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    }
+
+    .textContainer {
+        width: 100%;
+        order: 2;
+        align-content: center;
+        text-align: center;
+        padding: 50px 50px 50px 50px;
+    }
+
+    .containerItem {
+        align-content: center;
+    }
+
+    .image {
+        width: 100%;
+        height: 300px;
+        order: 1;
+        border-radius: 10px 10px 0 0;
+        background-image: linear-gradient(hsl(277, 64%, 61%, .8), hsl(277, 64%, 61%, .8)), url(../images/image-header-mobile.jpg);
+    }
+    
+}
